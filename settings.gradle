@@ -1,0 +1,18 @@
+pluginManagement {
+	repositories {
+		mavenLocal()
+		maven { url 'https://repo.spring.io/milestone' }
+		maven { url 'https://repo.spring.io/snapshot' }
+		gradlePluginPortal()
+	}
+  /*
+	resolutionStrategy {
+		eachPlugin {
+			if (requested.id.namespace == 'org.springframework.experimental.aot') {
+				useModule("org.springframework.experimental:spring-aot-gradle-plugin:${requested.version}")
+			}
+		}
+	}
+  */
+}
+rootProject.name = 'nativerunner'
